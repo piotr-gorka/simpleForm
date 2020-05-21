@@ -1,9 +1,22 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: rgb(45, 34, 65);
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.main {
+  color: #fff;
+}
+
+.fieldset{
+    margin-top: 16px;
+}
+

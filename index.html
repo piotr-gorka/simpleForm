@@ -1,14 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="normalize.css" type="text/css">
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
 
     <title>Simple Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1 class="header__heading">Prosty formularz</h1>
+      </header>
+      <form class="form" method="POST" action="http://dev.cotenfrontend.pl">
+        <fieldset class="fieldset">
+          <legend>Podstawowe informacje</legend>
+          <p>
+            <label
+              >Imię:
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Podaj swoje imię"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Nazwisko:
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Podaj swoje nazwisko"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >E-mail:
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Podaj swój email"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Telefon:
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Podaj swój numer telefonu"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend>Preferencje lodów</legend>
+
+          <p>
+            <label
+              >Czekoladowe
+              <input
+                type="radio"
+                checked
+                name="icecream"
+                id="choco"
+                value="choco"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Truskawkowe
+              <input
+                type="radio"
+                name="icecream"
+                id="strawberry"
+                value="strawberry"
+              />
+            </label>
+          </p>
+          <p>
+            <label
+              >Śmietankowe
+              <input type="radio" name="icecream" id="cream" value="cream" />
+            </label>
+          </p>
+          <p>
+            <label
+              >Waniliowe
+              <input
+                type="radio"
+                name="icecream"
+                id="vanilla"
+                value="vanilla"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+            <legend>Napisz coś więcej o sobie</legend>
+            <textarea></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Ulubiony krakowski zespół piłkarski</legend>
+            <select>
+                <option>Wisła</option>
+                <option>Cracovia</option>
+                <option>Hutnik</option>
+                <option>Inny</option>
+            </select>
+        </fieldset>
+       
+
+        <input type="submit" value="Wyślij" />
+      </form>
+    </main>
+  </body>
 </html>
